@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debis Hotel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="text-gray-800 bg-white">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <img src="debis 1.jpg" alt="Debis Hotel" class="h-20 mr-4"> <!-- Adjust the size (h-10) to your logo size --> 
+      <h1 class="text-2xl font-bold text-blue-600">Debis Hotel</h1>
+      <nav>
+        <ul class="flex space-x-6 font-medium">
+          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
+          <li><a href="#about" class="hover:text-blue-500">About</a></li>
+          <li><a href="#rooms" class="hover:text-blue-500">Rooms</a></li>
+          <li><a href="#booking" class="hover:text-blue-500">Booking</a></li>
+          <li><a href="#gallery" class="hover:text-blue-500">Gallery</a></li>
+          <li><a href="#testimonials" class="hover:text-blue-500">Testimonials</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center" style="background-image: url('gate1.jpg');">
+    <div class="bg-black bg-opacity-80 p-10 rounded-lg text-center text-white max-w-xl mt-16">
+      <h2 class="text-4xl font-bold mb-4">Welcome to Debis Hotel</h2>
+      <p class="text-lg mb-6">Luxury & Comfort in Every Stay</p>
+      <a href="#booking" class="bg-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">Book Now</a>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">About Debis Hotel</h2>
+      <p class="text-gray-700 max-w-3xl mx-auto leading-relaxed">
+        At Debis Hotel, we pride ourselves on offering world-class hospitality with a personal touch.
+        Whether you're here for business or leisure, our rooms, service, and amenities guarantee
+        a memorable experience. Discover comfort, elegance, and warmth in the heart of the city.
+      </p>
+    </div>
+  </section>
+
+  <!-- Rooms -->
+  <section id="rooms" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Our Rooms</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Room 1 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="room1.jpg" alt="Standard Room" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Standard Room</h3>
+          <p class="text-gray-600 mb-2">Comfortable space perfect for solo travelers and couples.</p>
+          <span class="text-blue-600 font-semibold">#8,000/night</span>
+        </div>
+        <!-- Room 2 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="room2.jpg" alt="Deluxe Room" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Deluxe Room</h3>
+          <p class="text-gray-600 mb-2">Spacious room with additional features and city views.</p>
+          <span class="text-blue-600 font-semibold">#12,000/night</span>
+        </div>
+        <!-- Room 3 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <img src="room3.jpg" alt="Executive Suite" class="w-full h-48 object-cover rounded mb-4">
+          <h3 class="text-xl font-semibold mb-2">Executive Suite</h3>
+          <p class="text-gray-600 mb-2">Premium experience with full amenities and private lounge access.</p>
+          <span class="text-blue-600 font-semibold">#20,000/night</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section id="booking" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Book a Room</h2>
+      <form class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow space-y-4">
+        <div>
+          <label class="block mb-2 font-medium">Full Name</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="Your name" />
+        </div>
+        <div>
+          <label class="block mb-2 font-medium">Email</label>
+          <input type="email" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="you@example.com" />
+        </div>
+        <div>
+        <label class="block mb-2 font-medium">Phone Number</label>
+          <input type="number" class="w-full border border-gray-300 rounded px-4 py-2" placeholder="07012345678" />
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div>
+            <label class="block mb-2 font-medium">Check-in Date</label>
+            <input type="date" class="w-full border border-gray-300 rounded px-4 py-2" />
+          </div>
+          <div>
+            <label class="block mb-2 font-medium">Check-out Date</label>
+            <input type="date" class="w-full border border-gray-300 rounded px-4 py-2" />
+          </div>
+        </div>
+        <div>
+          <label class="block mb-2 font-medium">Room Type</label>
+          <select class="w-full border border-gray-300 rounded px-4 py-2">
+            <option>Standard Room</option>
+            <option>Deluxe Room</option>
+            <option>Executive Suite</option>
+            <option>Short Rest</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Gallery</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <img src="space.jpg" class="w-full h-60 object-cover rounded" />
+        <img src="rest.jpg" class="w-full h-60 object-cover rounded" />
+        <img src="bar.jpg" class="w-full h-60 object-cover rounded" />
+        <img src="room1.jpg" class="w-full h-60 object-cover rounded" />
+        <img src="room2.jpg" class="w-full h-60 object-cover rounded" />
+        <img src="room3.jpg" class="w-full h-60 object-cover rounded" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold text-blue-600 mb-10">What Our Guests Say</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="italic mb-4">"The staff were incredibly helpful and the room was spotless. Will definitely return!"</p>
+          <h4 class="font-semibold">– Sarah M.</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="italic mb-4">"Beautiful hotel with top-notch service. The suite was amazing."</p>
+          <h4 class="font-semibold">– Daniel O.</h4>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <p class="italic mb-4">"A luxurious stay at a great price. Loved the food and the ambience."</p>
+          <h4 class="font-semibold">– Chika A.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Contact Us</h2>
+      <form action="https://formsubmit.co/richiedata8@gmail.com" method="POST" class="max-w-2xl mx-auto space-y-4">
+        <div>
+          <label class="block mb-2 font-medium">Name</label>
+          <input type="text" class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label class="block mb-2 font-medium">Email</label>
+          <input type="email" class="w-full border border-gray-300 rounded px-4 py-2" />
+        </div>
+        <div>
+          <label class="block mb-2 font-medium">Message</label>
+          <textarea class="w-full border border-gray-300 rounded px-4 py-2" rows="4"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 Debis Hotel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
