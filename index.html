@@ -86,7 +86,7 @@
   </section>
 
   <!-- Booking -->
-  <section id="booking" class="py-16 bg-gray-50">
+  <section id="bookingForm" class="py-16 bg-gray-50">
     <div class="max-w-7xl w-full mx-auto px-4">
       <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Book a Room</h2>
       <form action="https://formsubmit.co/richiedata8@gmail.com" method="POST" class="max-w-2xl w-full mx-auto bg-white p-6 rounded-lg shadow space-y-4">
@@ -113,13 +113,17 @@
           </div>
         </div>
         <div>
-          <label class="block mb-2 font-medium">Room Type</label>
-          <select class="w-full border border-gray-300 rounded px-4 py-2">
+          <label for="roomType" class="block mb-2 font-medium">Room Type</label>
+          <select id= "roomType" class="w-full border border-gray-300 rounded px-4 py-2">
             <option>Standard Room</option>
             <option>Deluxe Room</option>
             <option>Executive Suite</option>
             <option>Short Rest</option>
           </select>
+        </div>
+        <div>
+          <label for="nights">Number of Nights:</label>
+          <input type="number" id="nights" min="1" required  class="w-full border border-gray-300 rounded px-4 py-2" placeholder="1" />
         </div>
         <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition">Submit</button>
       </form>
@@ -183,11 +187,12 @@
       </form>
     </div>
   </section>
+  
 
   <!-- Footer -->
   <footer class="bg-gray-900 text-white text-center py-6">
     <p>&copy; 2025 Debis Hotel. All rights reserved.</p>
   </footer>
-
+  <script src="scripts.js"></scripts>
 </body>
 </html>
