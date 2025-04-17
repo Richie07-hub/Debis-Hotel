@@ -1,5 +1,4 @@
-<script>
-  // Wait for the DOM to fully load
+// Wait for the DOM to fully load
   document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#bookingForm form");
     
@@ -33,4 +32,3 @@
       alert(`Thank you, ${name}! Your booking for a ${roomType} for ${nights} night(s) is confirmed.\nTotal: ₦${total.toLocaleString()}`);
     });
   });
-</script>
