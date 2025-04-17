@@ -1,13 +1,36 @@
-document.getElementById("bookingForm") .addEventListener("submit", function(e) {
-   e.preventDefault();
+<script>
+  // Wait for the DOM to fully load
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("#bookingForm form");
+    
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-const name = document.getElementById("name"). value;
-const roomType = document.getElementById("roomType"). value;
-const nights = paraInt(document.getElementById("nights"). value);
+      const name = document.querySelector('input[placeholder="Your name"]').value;
+      const roomType = document.getElementById("roomType").value;
+      const nights = parseInt(document.getElementById("nights").value);
 
-const pricePerNight = roomType === "Deluxe Room" ? 25000 : 45000;
+      let pricePerNight;
+      switch (roomType) {
+        case "Standard Room":
+          pricePerNight = 8000;
+          break;
+        case "Deluxe Room":
+          pricePerNight = 12000;
+          break;
+        case "Executive Suite":
+          pricePerNight = 20000;
+          break;
+        case "Short Rest":
+          pricePerNight = 3000;
+          break;
+        default:
+          pricePerNight = 0;
+      }
 
-const total = pricePerNight * nights;
+      const total = pricePerNight * nights;
 
-alert('Thank You, ${name}! Your booking for a ${roomType} for ${nights} night(s) is confirmed. \nTotal: #${total};
-      });
+      alert(`Thank you, ${name}! Your booking for a ${roomType} for ${nights} night(s) is confirmed.\nTotal: ₦${total.toLocaleString()}`);
+    });
+  });
+</script>
